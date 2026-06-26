@@ -4,6 +4,9 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-
+    int ticketPrice = 20000;
+    int oneMile = 20;
+    int bonus = ticketPrice/oneMile;
+        System.out.println(bonus);
     }
 }
