@@ -4,10 +4,9 @@ package org.example;
 // click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
-    int ticketPrice = 20000;
-    int oneMile = 20;
-    int bonus = ticketPrice/oneMile;
-        System.out.println("Стоимость билета: " + ticketPrice + " руб.");
-        System.out.println("Начислено миль: " + bonus);
+        BonusMilesService service = new BonusMilesService();
+        int price = 250_000;
+        int miles = service.calculate(price); // должно получиться 500
+        System.out.println(miles);
     }
 }
